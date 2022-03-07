@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		do {
+			var gasolina = prompt ("Informe o valor vigente da gasolina");
+			var gasolina1 = parseFloat(gasolina.replace(',','.'));
+			var alcool = prompt ("Informe o valor vigente do alcool");
+			var alcool1 = parseFloat(alcool.replace(',','.'));
+			if (alcool1 > gasolina1 * 0.7) {
+			  alert ("Nessa ocasião, o álcool é a opção mais coerente.");
+			}
+			else if (alcool1 < gasolina1 * 0.7) {
+			  alert ("Nessa ocasião, a gasolina é a opção mais coerente.");
+			}
+			else {
+			  alert ("Nessa ocasião, qualquer um dos combustíveis terá a mesma eficiência.");
+			}
+			var continuar = prompt ("Deseja fazer uma nova operação? 1 para sim, 2 para não")
+		}
+		while (continuar==1)
+
+	</script>
+</head>
+<body>
+	<h1><center> Teste algortimo em JavaScript </center></h1>
+</body>
+</html>
